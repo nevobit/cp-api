@@ -2,7 +2,7 @@ import { Collection, getModel } from "../../constant-definitions";
 import { Bot, BotSchemaMongo } from "../../entities";
 
 export const updateBot = async (data: Partial<Bot>) => {
-    const model = getModel<Bot>(Collection.ACCOUNTS, BotSchemaMongo);
+    const model = getModel<Bot>(Collection.BOTS, BotSchemaMongo);
     const brands = await model.findById(data.id);
     
     if (!brands) throw new Error(`Brands doesn't exist`);

@@ -6,6 +6,7 @@ export interface Account {
     password: string;
     budget: number;
     market: string;
+    system: string;
     provider: string;
     status: string;
 }

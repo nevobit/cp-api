@@ -9,6 +9,7 @@ export const AccountSchemaMongo = new Schema<Account>({
     status: { type: String, },
     password: { type: String, required: true },
     budget: { type: Number },
+    system: { type: String },
     market: { type: String },
     provider: { type: String }
 },{

@@ -6,6 +6,8 @@ import { getAccountsRoute } from "./accounts/list";
 import { getBotsRoute } from "./bots";
 import { deleteAccountsRoute } from "./accounts/delete";
 import { deleteBotsRoute } from "./bots/delete";
+import { updateAccountsRoute } from "./accounts/update";
+import { updateBotRoute } from "./bots/update";
 
 const routes: RouteOptions[] = [
     createAccountRoute,
@@ -14,7 +16,9 @@ const routes: RouteOptions[] = [
     getAccountsRoute,
     getBotsRoute,
     deleteAccountsRoute,
-    deleteBotsRoute
+    deleteBotsRoute,
+    updateAccountsRoute,
+    updateBotRoute
 ];
 
 export const registerRoutes = (fastify: FastifyInstance) => {
